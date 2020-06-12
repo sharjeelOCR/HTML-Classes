@@ -6,18 +6,60 @@
     <title>Forms</title>
 </head>
 <body>
-    <form action="www.anywhere.com/12chforms.php">
-    <p>FirstName:
-        <input type="text" name="firstname" size="15" maxlength="30"/>
+    <form action="http://www.anywhere.com/12chforms.php" method="POST">
+    <fieldset>
+        <legend>Personal Details</legend>
+        <p>FirstName:
+        <input type="text" name="firstname" size="15" maxlength="30" required/>
+        <br/>
         <br/>
         LastName:
         <input type="text"name="Lastname" size= "15 " maxlength = "30">
         <br/>
+        <br/>
+        Gender:
+        <!multiple types of labels>
+        <input id="male" type="radio" name= "gender" value="m"checked />
+        <label for="male">male</label>
+        
+        <label ><input type="radio" name= "gender" value="f" />Female</label>
+        <br/>
+        <br/>
         Password:
         <input type="password" name="password" size="15" maxlength="30">
+        <br/>
+        <input type="date" value="dob"/>
+        <p>Nationality:
+            <select name="Countries" >
+                <option value="pakistan">Pakistan</option>
+                <option value="USA">USA</option>
+                <option value="Canada">canada</option>
+                <option value="China">China</option>
+            </select>
+        </fieldset>        
+            <h3>multiple</h3>
+            <select name="Countries" multiple>
+                <option value="pakistan">Pakistan</option>
+                <option value="USA">USA</option>
+                <option value="Canada">canada</option>
+                <option value="China">China</option>
+            </select>
+        </p>
+    </p>
+    <p>Interests
+        <input type="checkbox" name= "Interests" value= "men">men's cloathing
+        <input type="checkbox" name= "Interests" value= "wmen">women's cloathing
+        <input type="checkbox" name= "Interests" value= "acc">Accessories
+        <input type="checkbox" name= "Interests" value= "Elec">Electronics
     </p>
     <p>Comments:</p>
     <textarea name="comments" cols="30" rows="10">Enter your comments...</textarea>
+    <p>
+        <input type="file" name="dp">
+        <input type="submit" value="upload">
+    </p>
+    <br/>
+    <input type="Submit"/>
     </form>
 </body>
 </html>
