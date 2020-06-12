@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <h1>Tables: Sales Prices</h1>
+    <table width= 500 border="2" bgcolor= "#efefef">
+    <tr>
+        <thead>
+        <th>Products</th>
+        <th>Original Prices</th>
+        <th>Discounted Prices</th>
+        </thead>
+    </tr>
+<tbody>
+        <tr>
+        <th>Printed</th>
+        <td>2000</td>
+        <td>1800</td>
+    </tr>
+    <tr>
+        <th>UnPrinted</th>
+        <td>3000</td>
+        <td>2500</td>
+    </tr>
+    <tr>
+        <th>Stiched 2pc</th>
+        <td>4000</td>
+        <td>3200</td>
+    </tr>
+    <tr>
+        <th>Stiched 3pc</th>
+        <td>5000</td>
+        <td>4000</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <td colspan="3">Note:Sale is only valid for few days</td>
+    </tr>
+</tfoot>
+    </table>
+<br/>
+    <table width= 500 border="2" bgcolor= "#efefef" cellpadding = "10" cellspacing= "5">
+        <tr>
+            <th>Products</th>
+            <th>Original Prices</th>
+            <th>Discounted Prices</th>
+        </tr>
+    <tr>
+        <th>Printed</th>
+        <td>2000</td>
+        <td>1800</td>
+    </tr>
+    <tr>
+        <th>UnPrinted</th>
+        <td colspan="2">3000</td>
+        <td>2500</td>
+    </tr>
+    <tr>
+        <th>Stiched 2pc</th>
+        <td rowspan="2">4000</td>
+        <td>3200</td>
+    </tr>
+    <tr>
+        <th>Stiched 3pc</th>
+        <td>5000</td>
+        <td>4000</td>
+    </tr>
+    <tr>
+        <td colspan="3">Note: Sale is only valid for few days</td>
+    </tr>
+        </table>
+</body>
+</html>
